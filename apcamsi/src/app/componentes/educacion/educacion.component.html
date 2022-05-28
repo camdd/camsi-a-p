@@ -1,28 +1,28 @@
 <div class=" row edu main-container">
     <h1>Educación</h1>
-    <div class="text-center">
-        <button type="button" class="btn btn-success" (click)="onOpenModal('add')">
-            <a class="nav-link" style="color:white">
+    <div class="text" id="addedu">
+        <button type="button" class="btn btn-light btn-sm" (click)="onOpenModal('add')" >
+            <a class="nav-link" style="color:#ECC4CC">
                 Añadir educación <span class="sr-only">(current)</span></a>
             </button>
     </div>
 
-    <div id="main-container">
-        <div *ngFor="let educacion of educaciones" class="col-lg-12">
+    <div id="main-container" >
+        <div *ngFor="let educacion of educaciones" class="row">
             <div class="container">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <img src="{{educacion.imagenEdu}}" width="75%"> 
+                <div class="row">
+                    <div class="col col-lg-4 col-md-4 col-sm-4">
+                        <img src="{{educacion.imagenEdu}}" height="100px"> 
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-6 col-md-6 col-sm-6">
                         <h3> {{educacion.tituloEdu}} </h3>
                     </div>
 
-                    <div class="col text-center">
+                    <div class="col col-lg-2 col-md-2 col-sm-2">
                         <h3> {{educacion.fechaEdu}} </h3>
                         <a 
                         (click)="onOpenModal('edit', educacion)"
-                        class="btn btn-primary tooltips"
+                        class="btn btn-light"
                         data-placement="top"
                         data-toggle="tooltip"
                         data-original-title="Edit">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col align-self-end">
+                <div class="col lg-12 ">
                     <p> {{educacion.descEdu}} </p>
                 </div>
             </div>

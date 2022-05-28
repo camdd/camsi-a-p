@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+
+div{
+    background: rgb(255, 247, 238)
+}
+
+h1 {
+    text-decoration: none;
+    overflow: hidden;
+    color: transparent;
+    margin-top: 10vmin;
+    margin-left: 5vmin;
+    animation: showup 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes appear {
+    from {
+      transform: translateY(28vmin);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes showup {
+    from {
+      color: white;
+      opacity: 0;
+    }
+    to {
+      color: #383638;
+      opacity: 1;
+    }
+  }
+  
+
+#nombre {
+    text-align: left;
+    margin-left: 0.5em;
+    font-family: 'Fira mono', monospace;
+    font-weight: bold;
+    margin-top: 10%;
+
+}
+
+
+a {
+
+  }
+  
+  
+  

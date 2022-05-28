@@ -1,0 +1,13 @@
+* {
+    font-family: 'Fira Mono', monospace
+}
+
+.row {
+    padding:20px;
+    margin: 15px;
+}
+
+h1 { 
+    padding:20px;
+    font-weight:bold;
+}
