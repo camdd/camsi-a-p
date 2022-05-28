@@ -1,0 +1,25 @@
+#addexp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#addexp .btn {
+    font-weight: bold;
+    background-color: #DE7E93
+}
+
+.row {
+    padding:10px;
+    font-family: 'Fira Mono', monospace;
+
+}
+
+.container {
+    margin-right: 0px,
+}
+
+h1, h3 { 
+    font-weight: bold;
+}
+
+
