@@ -1,0 +1,11 @@
+* {
+    font-family: 'Fira Mono', monospace;
+}
+
+footer {
+    color: #009782;
+    font-size: 14px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}

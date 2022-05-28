@@ -1,0 +1,27 @@
+* {
+    font-family: 'Fira Mono', monospace;
+}
+
+.row {
+    padding:20px;
+}
+
+h1,h2 { 
+    font-weight:bold;
+}
+
+h2 { 
+    color:grey
+}
+
+
+.parte1, .parte2 { 
+    display:inline-block;
+    text-align: justify;
+}
+
+
+img {
+    margin-bottom: 150px;
+}
+
