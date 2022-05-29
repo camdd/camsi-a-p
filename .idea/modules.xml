@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/A-P-CamDambrosio.iml" filepath="$PROJECT_DIR$/.idea/A-P-CamDambrosio.iml" />
       <module fileurl="file://$PROJECT_DIR$/ap/Backend.iml" filepath="$PROJECT_DIR$/ap/Backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/camsi-a-p.iml" filepath="$PROJECT_DIR$/.idea/camsi-a-p.iml" />
     </modules>
   </component>
 </project>
