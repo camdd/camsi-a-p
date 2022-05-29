@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/experiencia")
 public class ExperienciaController {
     private final ExperienciaService experienciaService;
 
@@ -18,25 +18,25 @@ public class ExperienciaController {
         this.experienciaService = experienciaService;
     }
 
-    @GetMapping("/all")
+    @GetMapping("/allExp")
     public ResponseEntity<List<Experiencia>> obtenerExperiencia(){
         List<Experiencia> experiencias=experienciaService.buscarExp();
         return new ResponseEntity<>(experiencias, HttpStatus.OK);
     }
 
-    @PutMapping("/update")
+    @PutMapping("/updateExp")
     public ResponseEntity<Experiencia> editarExperiencia(@RequestBody Experiencia experiencia){
         Experiencia updateExperiencia=experienciaService.editarExp(experiencia);
         return new ResponseEntity<>(updateExperiencia, HttpStatus.OK);
     }
 
-    @PostMapping("/add")
+    @PostMapping("/addExp")
     public ResponseEntity<Experiencia> crearExperiencia(@RequestBody Experiencia experiencia) {
         Experiencia nuevaExperiencia=experienciaService.addExp(experiencia);
         return new ResponseEntity<>(nuevaExperiencia, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/deleteExp/{id}")
     public ResponseEntity<?> borrarExperiencia(@PathVariable("id") Long id) {
         experienciaService.borrarExp(id);
         return new ResponseEntity<>(HttpStatus.OK);
