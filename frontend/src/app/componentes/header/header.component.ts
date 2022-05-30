@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
         this.usuario = response;
       },
       error:(error:HttpErrorResponse)=>{
-        alert(error.message);
+        console.log(error.message);
       }
     })
   }

@@ -28,7 +28,7 @@ export class ExperienciaComponent implements OnInit {
         this.experiencias=Response;
       },
       error:(error:HttpErrorResponse)=>{
-        alert(error.message); 
+        console.log(error.message); 
       }
     })
     }
