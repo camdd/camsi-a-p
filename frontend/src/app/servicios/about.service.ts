@@ -8,7 +8,7 @@ import { Usuario } from '../models/usuario';
   providedIn: 'root'
 })
 export class AboutService {
-  private apiServerUrl=environment.apiBaseUrl;
+  private apiServerUrl='https://arg-programa-cam-dambrosio.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://bnxvpp8h5ffhjljsjqjn-mysql.services.clever-cloud.com'
+  apiBaseUrl: 'https://arg-programa-cam-dambrosio.herokuapp.com/'
 };
 
 /*
