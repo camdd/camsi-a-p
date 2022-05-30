@@ -8,7 +8,7 @@ import { Experiencia } from '../models/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private apiServerUrl='https://arg-programa-cam-dambrosio.herokuapp.com';
+  private apiServerUrl='http://arg-programa-cam-dambrosio.herokuapp.com';
 
   constructor(private http:HttpClient) { }
 
