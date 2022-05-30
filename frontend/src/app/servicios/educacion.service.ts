@@ -8,7 +8,7 @@ import { Educacion } from '../models/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  private apiServerUrl='https://appcamsi.herokuapp.com';
+  private apiServerUrl=environment.apiBaseUrl;
 
   constructor(private http:HttpClient) { }
 

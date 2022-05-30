@@ -8,7 +8,7 @@ import { Usuario } from '../models/usuario';
   providedIn: 'root'
 })
 export class AboutService {
-  private apiServerUrl='https://appcamsi.herokuapp.com';
+  private apiServerUrl=environment.apiBaseUrl;
 
   constructor(private http: HttpClient) { }
 
